@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1d1d1d;
+}
+
+h6 {
+  color: #d8d8d8;
+
+}
+
+hr {
+  width: 30px;
+  height: 2px;
+  background-color: #fb774b;
+}
+.section-p1{
+  padding: 40px 80px;
+}
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 20px 80px; */
+  background: #E3E6F3;
+  box-shadow: 0 5px 15px rgba(0,0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+/* .logo{
+  margin: auto;
+  margin:17px 0px;
+  font-size:6vw;
+} */
+.nav{
+  height: 100px;
+  width: 100%;
+  /* background-color: red; */
+  border-bottom: 2px solid #dadada;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3vw;
+}
+.nav-part-2{
+  display: flex;
+  align-items: center;
+  /* background-color: blue; */
+  gap:2vw;
+}
+.nav h2{
+  font-size: 2vw;
+  font-weight: 700;
+}
+.nav h4{
+  font-size: 3vh;
+}
+.nav i{
+  font-size: 3vw;
+  flex-wrap: 800;
+  display: none;
+}
+.content{
+  height: calc(100% - 100px);
+  width: 100%;
+}
+.ri-shopping-cart-line:before {
+  font-size: 3vw;
+}
+@media (max-width:1000px) {
+  .nav{
+    background-color: lightseagreen;
+    color: #fff;
+    padding: 0 5vw;
+  }
+  .nav h2{
+    font-size: 6vw;
+  }
+  .nav h4{
+    font-size: 4vw;
+    display: none;
+  }
+  .nav i{
+    display: block ;
+    font-size: 6vw;
+  }
+  .nav li a{
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+  }
+  /* .nav iw{
+    display: block;
+  }
+  #nav ul {
+    position: fixed;
+    width:100%;
+    height: 100vh;
+    background:#2f3640;
+    top:80px;
+    left:0;
+    text-align: center;
+  }
+   */
+
+/* @media (max-width:1000px) {
+  nav iw{
+    display: block;
+  }
+  #nav ul {
+    position: fixed;
+    width:100%;
+    height: 100vh;
+    background:#2f3640;
+    top:80px;
+    left:0;
+    text-align: center;
+  }
+  nav li{
+    display:block;
+    margin:50px 0;
+    line-height: 30px;
+  }
+  nav a {}
+   */
+}
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar li{
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+#navbar li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s;
+}
+#navbar li a:hover,
+#navbar li a.active{
+  color: #088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after
+{
+  content:" ";
+  width:30%;
+  height: 2px;
+  background:#088178;
+  position: absolute;
+  bottom: -4px;
+  left:20px;
+}
+
+#hero{
+  background-image: url(https://www.dmarge.com/wp-content/uploads/2015/06/how-to-look-stylish.jpg);
+  height: 60vh;
+  width: 100%;
+  background-size:cover;
+  background-position: top 25% right -17%;
+  padding: 0 80px;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#hero h4{
+  padding-bottom: 15px;
+}
+#hero h1{
+  color: #088178;
+}
+#hero button{
+  background-image: url(https://www.downloadclipart.net/large/brush-stroke-transparent-background.png);
+  background-color: transparent;
+  color: #088178;
+  border: 0;
+  padding: 14px 80px 14px 65px;
+  cursor: pointer;
+  font-weight: 15px;
+}
+.sam{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.collection{
+  margin:20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.bed{
+  margin:20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+footer{
+  height: 32vh;
+  background-color: black;
+  color: white;
+}
+.logoph{
+ align-content: center;
+}
+
+/* ======== */
+.mav{
+height: 8vh;;
+background-color:#81b85c;;
+height: 50px;
+border-bottom: 1px solid rgb(168, 140, 130);
+display: flex;
+align-items: center;
+}
+.mav ul li a:hover{
+color: white;
+font-weight: bolder;
+align-content: center;
+justify-content: center;
+  }
+#features{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#features .fe-box{
+  width:180px;
+  text-align:center;
+  padding: 25px -10px;
+  box-shadow: 20px 20px 34px rgba(0,0, 0, 0.03);
+  border:1px solid #404340;
+  border-radius: 4px;
+  margin: 15px 0;
+}
+#features .fe-box:hover{
+  box-shadow: 10px 10px 54px rgba(11, 4, 145, 0.1);
+}
+#features .fe-box h3{
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius:4px;
+  color:#088178;
+  background-color: #fddde4;
+}
+
+#features .fe-box:nth-child(2) h3{
+  background-color: #cdebbc;
+}
+#features .fe-box:nth-child(3) h3{
+  background-color: #d1e8f2;
+}
+#features .fe-box:nth-child(4) h3{
+  background-color: #cdd4f8;
+}
+#features .fe-box:nth-child(5) h3{
+  background-color: #f6dbf6;
+}
+.navfooteritem{
+  display: flex;
+  justify-content:left;
+  align-items: center;
+
+}
+.navfooterdesk{
+  font-size: 12px;
+  color: #767676;
+  display: block;
+  margin-bottom: 1px;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+}
+footer .footercontainer{
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.footdesk{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+
+

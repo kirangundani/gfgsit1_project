@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Shopping Cart</title>
+    <link rel="stylesheet" href="Shop.css">
+</head>
+<body>
+    <header>
+        <h1>Fashion</h1>
+        <!-- <a href="#cart">View Cart</a> -->
+    </header>
+    <main>
+      <div class="prd">
+        <ul class="product-list">
+            <li class="product-item">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.mM_SGRNJsrE64cxPqh4xzwHaIF&pid=Api&P=0&h=180" alt="Product 1" width="150px">
+                <h3>Product 1</h3>
+                <p>Price: $20.00</p>
+                <button onclick="addItem(this)">Add to Cart</button>
+            </li>
+            <li class="product-item">
+              <img src="https://tse1.mm.bing.net/th?id=OIP.DSjZPk9uy01_f2ox4Q5QPgHaHa&pid=Api&P=0&h=180" alt="Product 1" width="150px">
+              <h3>Product 1</h3>
+              <p>Price: $45.00</p>
+              <button onclick="addItem(this)">Add to Cart</button>
+          </li>
+          <li class="product-item">
+            <img src="https://sp.yimg.com/ib/th?id=OPA.LV%2bOlqkx131Cwg474C474&o=5&pid=21.1&w=&h=" alt="Product 1" width="150px">
+            <h3>Product 1</h3>
+            <p>Price: $28.00</p>
+            <button onclick="addItem(this)">Add to Cart</button>
+        </li>
+        <li class="product-item">
+          <img src="https://sp.yimg.com/ib/th?id=OPA.bWQ6kFbnD%2bhWpg474C474&o=5&pid=21.1&w=&h=" alt="Product 1" width="150px">
+          <h3>Product 1</h3>
+          <p>Price: $70.00</p>
+          <button onclick="addItem(this)">Add to Cart</button>
+      </li>
+            </ul>
+          </div>
+    </main>
+
+    <section id="cart">
+        <h2 id="crt">Your Cart</h2>
+        <div class="cart-container">
+            </div>
+        <p class="total-price">Total Price: $0.00</p>
+        <!-- <button onclick="checkout()">Secure Checkout</button> -->
+    </section>
+    <script src="Shop.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.mid border mt-3 bg-light row{
+ height: 100%;
+}
+.col-md-6py-3{
+  margin: 271px 664px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
